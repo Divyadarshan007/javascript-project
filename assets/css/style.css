@@ -1,0 +1,101 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+}
+
+:root{
+    --bg-color: #f5f5f5;
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    --primary-color:#0d6efd;
+    --primary-color-hover:#0a56c7;
+    --box-shadow-primary:  #0d6efd 0px 2px 5px 3px, #0d6efd 0px 2px 5px 3px;
+    --input-bg:#F7F7F8;
+    --input-bg-hover:#e8e8eb;
+}
+.box-shadow{
+    box-shadow: var(--box-shadow);
+    height: 70vh;
+    overflow: hidden;
+}
+.left{
+    padding-inline: 70px;
+}
+.input-box{
+    padding: 15px 50px 15px 20px;
+    border: 0;
+    background-color: var(--input-bg);
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+.input-box:focus{
+    border: none;
+    outline: 2px solid var(--primary-color) !important
+}
+.input-box:hover::placeholder{
+    opacity: 0.7;
+}
+
+
+.icons:hover input{
+    background-color: var(--input-bg-hover);
+}
+
+.right{
+    position: relative;
+    background-image: url('../image/img.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#wave-2{
+    position: absolute;
+    fill: #fff;
+    height: 102%;
+    left: -10px;
+    top: -2px
+
+}
+#wave-1{
+    position: absolute;
+    fill: none;
+    left: -60px;
+    top: -150px;
+    fill: none;
+    stroke-width: 2px;
+    stroke-dasharray: 6.5px;
+}
+
+#sub{
+    padding: 10px 70px !important;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.3s all linear;
+}
+#sub:hover{
+    background-color: var(--primary-color-hover);
+}
+.heading p{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.icons {
+    position: relative;
+}
+.icons i{
+    position: absolute;
+    right: 7%;
+    top: 25%;
+    font-size: 18px;
+    color: grey;
+}
+.r-3{
+    right: 3% !important;
+}
